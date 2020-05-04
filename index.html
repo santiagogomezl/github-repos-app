@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>GitHub Repo App</title>
+</head>
+<body>
+    <header>
+        <h1>GitHub Repo App</h1>
+    </header>
+    <main>
+        <form method="GET" action="#">
+            <label for="user-handle">Enter a user handle to search for public repos</label>
+            <input type="input" id="user-handle" placeholder="santiagogomezl" required><br>
+            <input type="submit" value="Search Repos">   
+        </form>
+        
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" 
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
